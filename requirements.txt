@@ -1,0 +1,43 @@
+# PyTorch with CUDA 12.8 support for RTX 5090 (Blackwell SM_120)
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.6.0
+torchvision>=0.21.0
+
+# Flash Attention — Linux only, requires CUDA 12.8+ and matching PyTorch
+# If no pre-built wheel matches your env, install manually:
+#   pip install flash-attn --no-build-isolation
+flash-attn>=2.7.3
+
+# Core training dependencies
+numpy==1.26.4
+matplotlib>=3.3.0
+pandas>=1.1.4
+pillow>=7.1.2
+requests>=2.23.0
+tqdm>=4.64.0
+seaborn>=0.11.0
+ultralytics-thop>=2.0.0
+
+# Model / vision
+timm==1.0.14
+albumentations==2.0.4
+opencv-python==4.9.0.80
+scipy==1.13.0
+pycocotools==2.0.7
+supervision==0.22.0
+PyYAML==6.0.1
+safetensors==0.4.3
+huggingface-hub==0.23.2
+
+# ONNX export
+onnx>=1.14.0
+onnxslim>=0.1.31
+# onnxruntime-gpu replaces onnxruntime (CPU variant); supports CUDA 12.x
+onnxruntime-gpu>=1.19.0
+
+# System / profiling
+psutil==5.9.8
+py-cpuinfo==9.0.0
+
+# Demo / serving (optional)
+gradio==4.44.1

@@ -1,0 +1,6 @@
+train: E:/machine_learning/yolov13-main/datasets/vehicle_night_rainy_foggy/train/images
+val: E:/machine_learning/yolov13-main/datasets/vehicle_night_rainy_foggy/valid/images
+test: E:/machine_learning/yolov13-main/datasets/vehicle_night_rainy_foggy/test/images
+
+nc: 2
+names: ['car', 'truck']

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "UI (yolov13-gpu)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/ultralytics/main.py",
+      "python": "E:/machine_learning/conda_envs/yolov13-gpu/python.exe",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}
