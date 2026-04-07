@@ -31,7 +31,6 @@ Classifier: Operating System :: MacOS
 Classifier: Operating System :: Microsoft :: Windows
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
-License-File: LICENSE
 Requires-Dist: numpy>=1.23.0
 Requires-Dist: numpy<2.0.0; sys_platform == "darwin"
 Requires-Dist: matplotlib>=3.3.0
@@ -84,7 +83,6 @@ Requires-Dist: hub-sdk>=0.0.12; extra == "extra"
 Requires-Dist: ipython; extra == "extra"
 Requires-Dist: albumentations>=1.4.6; extra == "extra"
 Requires-Dist: pycocotools>=2.0.7; extra == "extra"
-Dynamic: license-file
 
 <p align="center">
     <img src="assets/icon.png" width="110" style="margin-bottom: 0.2;"/>

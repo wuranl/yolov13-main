@@ -1,4 +1,3 @@
-LICENSE
 README.md
 pyproject.toml
 tests/test_cli.py
@@ -76,6 +75,10 @@ ultralytics/cfg/models/v10/yolov10s.yaml
 ultralytics/cfg/models/v10/yolov10x.yaml
 ultralytics/cfg/models/v12/yolov12.yaml
 ultralytics/cfg/models/v13/yolov13.yaml
+ultralytics/cfg/models/v13/yolov13_ia.yaml
+ultralytics/cfg/models/v13/yolov13_ia_hyperace_msda_p2.yaml
+ultralytics/cfg/models/v13/yolov13_msda.yaml
+ultralytics/cfg/models/v13/yolov13_p2.yaml
 ultralytics/cfg/models/v3/yolov3-spp.yaml
 ultralytics/cfg/models/v3/yolov3-tiny.yaml
 ultralytics/cfg/models/v3/yolov3.yaml
@@ -222,9 +225,11 @@ ultralytics/trackers/utils/__init__.py
 ultralytics/trackers/utils/gmc.py
 ultralytics/trackers/utils/kalman_filter.py
 ultralytics/trackers/utils/matching.py
+ultralytics/utils/CustomMessageBox.py
 ultralytics/utils/__init__.py
 ultralytics/utils/autobatch.py
 ultralytics/utils/benchmarks.py
+ultralytics/utils/capnums.py
 ultralytics/utils/checks.py
 ultralytics/utils/dist.py
 ultralytics/utils/downloads.py
