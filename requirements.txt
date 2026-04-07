@@ -39,5 +39,5 @@ onnxruntime-gpu>=1.19.0
 psutil==5.9.8
 py-cpuinfo==9.0.0
 
-# Demo / serving (optional)
+# Demo / serving (optional) 
 gradio==4.44.1
