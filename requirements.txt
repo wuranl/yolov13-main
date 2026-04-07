@@ -1,7 +1,7 @@
 # PyTorch with CUDA 12.8 support for RTX 5090 (Blackwell SM_120)
 --extra-index-url https://download.pytorch.org/whl/cu128
-torch>=2.6.0
-torchvision>=0.21.0
+torch>=2.2.0
+torchvision>=0.17.0
 
 # Flash Attention — Linux only, requires CUDA 12.8+ and matching PyTorch
 # If no pre-built wheel matches your env, install manually:
