@@ -1,17 +1,17 @@
 # --- PyTorch + Flash Attention（三者须一致，否则 flash-attn 无法安装或运行报错）---
-# 说明：
+# 说明（云 GPU 方案 A：预装 PyTorch 2.3.1 + Python 3.12 + CUDA 12.1 / Ubuntu 22.04）：
 # - 预编译 flash-attn 的 whl 仅支持 Linux x86_64；Windows 请用 WSL2 或源码编译。
-# - 文件名里的「cu12torch2.2」表示 CUDA 12.x + PyTorch 2.2.x；请用下方 cu121 的 PyTorch 官方包与之对齐。
+# - 文件名里的「cu12torch2.3」表示 CUDA 12.x + PyTorch 2.3.x；请用下方 cu121 的 PyTorch 官方包与之对齐。
 # - 若遇 undefined symbol / ABI 报错，把 URL 中 cxx11abiFALSE 换成同版本 cxx11abiTRUE 再试。
-# - Python 版本：把 URL 里的 cp311-cp311 改成你的版本（如 cp310-cp310、cp312-cp312）。
-# - 若必须用 RTX 5090 的 cu128 PyTorch，官方可能没有完全匹配的预编译 flash wheel，需源码安装 flash-attn（见项目文档）。
+# - Python 版本：当前 wheel 为 cp312（Python 3.12）；若你改用 3.11，请把 URL 中 cp312-cp312 改为 cp311-cp311 并换对应 whl。
+# - 若必须用 cu128 等新 CUDA 的 PyTorch，可能没有完全匹配的预编译 flash wheel，需源码安装 flash-attn。
 --extra-index-url https://download.pytorch.org/whl/cu121
 
-torch==2.2.2
-torchvision==0.17.2
+torch==2.3.1
+torchvision==0.18.1
 
-# 与 torch==2.2.x + cu12 预编译包对应（Dao-AILab v2.7.3）
-flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu12torch2.2cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+# 与 torch==2.3.x + cu12 预编译包对应（Dao-AILab v2.7.3）
+flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu12torch2.3cxx11abiFALSE-cp312-cp312-linux_x86_64.whl
 
 # Core training dependencies
 numpy==1.26.4
