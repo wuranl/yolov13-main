@@ -4,5 +4,6 @@
   "python.terminal.activateEnvironment": true,
   "python-envs.defaultEnvManager": "ms-python.python:conda",
   "python-envs.defaultPackageManager": "ms-python.python:conda",
-  "cmake.sourceDirectory": "E:/yolov13-main/examples/YOLOv8-CPP-Inference"
+  "cmake.sourceDirectory": "E:/yolov13-main/examples/YOLOv8-CPP-Inference",
+  "python-envs.pythonProjects": []
 }
